@@ -1,0 +1,403 @@
+CRIME ANALYSIS AND GEOSPATIAL MAPPING AT ALICIA, ISABELA. EREAND DAVE O. TAGUIAM ANABELA I. CAPUCHINO ABNER B. CASTILLO 2024
+
+ABSTRACT
+
+Crime is a social stigma that needs to be addressed beyond talks. The use of geospatial information technology has become well-recognized within the fields of forensic sciences and criminology, especially in the developed world. The current study is an attempt to analyze the crime hot spot of various crime types, including rape, murder, drugs, and robbery in the Municipality of Alicia, Isabela from the year 2018-2023. The crime data was collected from the Philippine National Police Alicia, Isabela (PNP), K-means clustering analysis was applied and several maps were generated, including crime type, crime rate, and crime hot spot. The researchers used K-means clustering analysis for processing the crime data to measure the number of drugs, rape, murder, and robbery with respective time occurrence of the crimes that is most likely to happen in a particular area based on the historical data. By using geospatial mapping, the clustered data is shown in the created map with their respective crime type, crime hot spot, time occurrence and will be identified based on the color indicator provided in each type of crime.
+
+This study explores the application of "Crime Analysis and Geospatial Mapping" in the municipality of Alicia, Isabela, as a tool for identifying crime hotspots. By leveraging geospatial technology to visualize crime data, the research aims to provide law enforcement agencies with a powerful tool to locate areas with a high likelihood of criminal activity. This approach is intended to enhance the effectiveness of police operations, enabling more strategic deployment of resources and proactive crime prevention measures. The study emphasizes how geospatial mapping can change traditional crime analysis methods and make the community safer in Alicia, Isabela.
+
+Keywords: GIS Crime Mapping Analysis, Crime Mapping Patterns, Crime Mapping and Geospatial Data Analysis
+
+1.1 Background of the Study
+
+Safe communities are essential for the well-being of citizens. It is important that you feel safe wherever you go, where you live, work, or spend your leisure time. By enhancing public safety, law enforcement or police officers protect their citizens effectively. A sustainable community is defined as "safe, perceives itself to be safe, and is considered by others to be safe." (Cozens, 2005)
+
+When analyzing and mapping spatial patterns (e.g., crime patterns), it is vital to ensure that identifying hotspots is as accurate and effective as possible (Kalinic & Krisp, 2018). Crime Analysis and Geospatial mapping is a study that will create a system that the police will use to identify high crime areas and hotspots by providing a map to locate where crimes or concentration of crimes may occur to help law enforcement agencies prevent and reduce crime and to improve safe community in Alicia, Isabela.
+
+The Crime Analysis and Geospatial Mapping is a system that will be very useful in finding the possible crimes that may occur in particular areas in Alicia, Isabela, especially to our investigator and detective personnel from Alicia, Police Station that can use maps to better understand where this crime mostly happens. (Phiri, 2020): "Crime mapping is a tactic employed by the police department to identify and stop crime." The strategy entails the use of geographic maps to assist crime analysts in identifying crimes committed in various residential areas as well as choosing the most effective course of action.
+
+In this study, GIS (Graphical Information System) will be used to create visual representations of crime patterns and trends in Alicia, Isabela. This will involve mapping crime incidents and identifying areas with high levels of incident activity. By using GIS to analyze and visualize crime data, researchers can gain a better understanding of the spatial patterns and underlying factors that contribute to crime in Alicia, and develop targeted interventions to reduce crime and improve public safety.
+
+Now that physical interaction and going outside are back to normal and people spend more of their time exploring around as usual, it is an excellent opportunity to develop a system exclusively that maps the crime activities in Alicia Isabela for the police officers to upgrade their work in terms of taking care of the netizen. According to Ghankutkar and Sarkar (2019), Crime analysis is essential for law enforcement and helps criminal investigators apprehend offenders. The general people must also be informed about criminal activities so that they can take protective measures for the safety of their loved ones. This helps them decide how to use their resources and strategies to make a better plan for their community.
+
+1.2 Objectives of the Study
+
+The main objective of this study is to make the work of law enforcers and the PNP easier by mapping the crime hotspots in a particular area in Alicia, Isabela. However, to be able to address the problem that has been identified, the study aimed to achieve the following objectives:
+
+1. To provide the time occurrence of crime that is most likely to happen in a particular area.
+
+2. To survey information about the advantages of the system using a questionnaire form in terms of International Organization for Standardization (ISO) standards;
+
+2.1. Functional Suitability;
+
+2.2. Performance Efficiency;
+
+2.3. Information and Data;
+
+2.4. Usability;
+
+2.5. Reliability,
+
+2.6. Security,
+
+2.7. Portability; and
+
+2.8. Maintainability
+
+3. To identify crime hot spots with a high concentration of crime incidents and help police track crimes.
+
+1.3 Significance of the Study
+
+This research aims to gain a better understanding of the system to determine its effectiveness. The following people will benefit from this research:
+
+Municipality of Alicia. This study will help the city or municipality ensure the safety of their netizen, for they are one of those in charge of maintaining peace in Alicia, Isabela.
+
+Philippine National Police. This study will help police officers improve their work in caring for all the netizens in Alicia, Isabela. It will serve as the basis for formulating policies and guidelines that effectively minimize the crime menace in the city.
+
+Barangay Officials. Barangay officials in each barangay of Alicia, Isabela will surely benefit from this research, for the police officers will inform them about their barangay's crime rates so they can be more active in helping their people in every crime situation.
+
+Enhanced user experience. The study on crime analysis and geospatial mapping in Alicia has important implications for residents, businesses, and visitors to the city. By identifying crime hot spots, the findings of this research can help individuals and organizations make informed decisions about where to live, work, and visit. Moreover, the development of evidence-based crime prevention strategies can ultimately lead to improved public safety in Alicia, creating a more secure and livable environment for all.
+
+Researchers
+
+The researchers on crime analysis and geospatial mapping in Alicia contribute to the existing literature on crime prevention and hotspots. By applying geospatial mapping and analysis, this study offers new insights into the spatial patterns and trends of crime in urban areas. Additionally, the study's methodology can serve as a model for future research on crime prevention and public safety in other urban areas.
+
+Future Researchers
+
+This study offers a rich source of data and analysis that can be used for further research on crime prevention and public safety. The findings of this research can be used as a baseline for future studies, allowing for longitudinal analysis of crime trends and the evaluation of the effectiveness of crime prevention strategies over time. Additionally, the geospatial and statistical methodologies employed in this research can be adapted and refined for use in other contexts, contributing to the advancement of the field of crime prevention and urban studies,
+
+1.4 Scope and Delimitations
+
+The study focuses on mapping recorded and reported crime lists in 2018-2023. The study was conducted in Alicia Philippine National Police, Alicia, Isabela. This study was conducted from the start of the second semester in the year 2023. In which data were limited to crimes recorded by the Philippine National Police of Alicia, Isabela. The names of suspects and victims were not included in the datasets in this study due to the confidentiality of the information.
+
+2.1 Review of Related Literature
+
+GIS Crime Mapping Analysis
+
+Tang et al. (2018) emphasizes the role of Geographic Information Systems (GIS) in optimizing the use of human resources for crime analysis and prevention. GIS facilitates the understanding of both spatial and temporal distribution patterns of crime, enabling law enforcement agencies to implement efficient crime prevention tactics. By analyzing the spatial and temporal pattems of crime alongside the locations of police stations, GIS assists in strategic resource allocation and enhances the effectiveness of crime prevention efforts.
+
+Sathiyanarayanan (2019) highlights the significant advantages of visual analysis in crime prevention. By employing GIS crime mapping analysis, crime analysts can better understand the uneven distribution of crime across urban areas. Crime mapping patterns reveal that criminal activities are concentrated in certain hotspots, which play a vital role in understanding the spatial distribution of crime. The adoption of hotspot policing has increased among police departments due to its effectiveness in enhancing criminal investigations. This method leverages visual analysis to identify crime trends and predict future hotspots through spatial correlation. Additionally, crime mapping or geospatial data analysis enhances the detection of crime pattems by thoroughly analyzing spatial data, which is vital for forecasting and preventing future crimes.
+
+Crime analysis, as discussed by Rohini et al. (2019), plays a vital role in law enforcement by conducting systematic research to identify and analyze crime patterns and trends. The use of GIS crime mapping analysis allows analysts to visualize crime incidence data, identify hotspots, and understand their pattems. This information is crucial for developing targeted crime prevention strategies and initiatives. Thus, crime analysis and mapping are indispensable tools that enhance law enforcement's ability to prevent and address crime, ensuring better community safety and security.
+
+Dağlar and Argun (2018) discuss the increasing utilization of GIS and crime mapping in law enforcement through thematic analysis. They highlight the growing recognition of GIS and crime mapping tools by police departments, facilitated by technological advancements and the availability of geographic data sources. Moreover, the authors advocate for a proactive approach to addressing crime issues using GIS and crime mapping, emphasizing the importance of identifying contributing factors to crime and implementing targeted interventions for effective crime prevention. Overall, they underscore the value of spatial analysis in enhancing law enforcement efforts and improving public safety.
+
+A geographic information system (GIS) is a system created to gather, store, manage, analyze, organize, and display various kinds of geographical (geospatial) data about a particular region, according to Butorac and Marinović (2020). GIS can be used in security as a tool for analysis and decision-making, particularly for mapping and criminal analysis.
+
+The work of Cohn and Breetzke (2019) underscores the integral role of GIS in crime mapping and emergency response, GIS visualization facilitates enhanced emergency response preparation, prioritization of mitigation efforts, and analysis of crime events. Additionally, GIS aids in suspect identification when traditional leads are lacking, thereby enhancing crime investigation outcomes. The dependency of crime mapping and analysis on GIS technology ensures efficient resource distribution and operational effectiveness in law enforcement agencies. GIS serves as a mission-critical tool in law enforcement, providing spatial information essential for defining response strategies and resource allocation.
+
+Sheikh et al. (2018) highlight the importance of GIS in crime analysis and policy implementation through their thematic analysis. GIS technology plays a crucial role in detecting suspicious events, facilitating trend and pattern analysis, implementing crime reduction policies, and integrating various components of comprehensive crime management. This will contribute as a foundational tool for law enforcement agencies and policymakers in their efforts to address crime effectively and enhance public safety.
+
+The crucial role of GIS in crime analysis and prevention. GIS facilitates problem-solving, issue analysis, and understanding the dynamics of criminal behavior, aiding in the development of effective crime prevention strategies. Moreover, GIS and remote sensing applications, according to Fajemirokun et al. (2018), are essential for analyzing historical crime trends, establishing beats, identifying hotspots, and devising crime reduction plans. Overall, GIS simplifies issue analysis and enhances understanding of criminal conduct, enabling more informed decision-making in law enforcement and crime prevention efforts.
+
+Balogun et al. (2018) elucidate the advantages of GIS-based crime mapping through their thematic analysis. GIS technology allows for a comprehensive examination of crime, excluding problematic areas and providing detailed insights into crime patterns. Moreover, GIS-based applications demonstrate superiority in identifying top crime trends compared to traditional methods. The study also underscores the negative impacts of crime on society and highlights the role of GIS technology in enhancing police procedures by simplifying cognitive processes and facilitating geographical connections. GIS-based crime mapping emerges as a valuable tool for law enforcement agencies in understanding, analyzing, and addressing crime effectively.
+
+Sheikh (2020) explores the utilization of data mining in crime analysis and prevention through thematic analysis. The paper discusses the application of data mining systems in understanding criminal activities and pathways post-crime. It emphasizes the identification of maximum crime locations, the role of data analysts in crime solving, and the utilization of previous criminal data to implement effective crime reduction strategies. Sheikh highlights the importance of leveraging data mining techniques to enhance law enforcement efforts and address criminal activities efficiently.
+
+In his book, Ahmed S. (2020) delves into the complexities of identity crime. He underscores its rapid growth globally and the challenges it poses due to the lack of a recognized definition and legal framework. Dr. Syed Ahmed's thorough analysis of identity crime provides actionable suggestions for addressing these challenges, offering insights into stopping and mitigating its effects. As a result, the book serves as a valuable resource for understanding and combating identity crime.
+
+Albahli et al. (2021) explore the impact of crime on society and underscore the importance of crime prevention. They discuss the significant socioeconomic loss caused by crimes and emphasize the necessity of allocating resources effectively for crime prevention, particularly through law enforcement measures. This analysis highlights the importance of addressing the societal implications of crime to maintain social stability and peace.
+
+Panja, et al. (2020), emphasize the significance of crime mapping analysis in addressing urban crime challenges. Through the utilization of data mining technologies, crime mapping analysis aids law enforcement agencies in understanding crime pattems and implementing effective crime reduction and prevention strategies. This analysis shows the importance of advanced analytical techniques to enhance urban security and combat various forms of criminal activities.
+
+Wang, et al. (2019), contribute significantly to the field of crime mapping by introducing the Hotspot Optimization Technique (HOT), which revolutionizes traditional hotspot mapping approaches. By incorporating socioeconomic and potential crime characteristics into hotspot analysis, HOT offers a more comprehensive understanding of spatial crime distributions. This is to improve crime mapping accuracy and inform targeted crime prevention strategies.
+
+By employing cluster analysis, Roy, et al. (2023), identify and delineate three primary research domains within GIS-enabled crime studies. These areas encompass the utilization of geospatial technology in spatial crime analysis, the development of innovative crime mapping and visualization techniques, and the integration of advanced machine learning algorithms for crime prediction. Through this structured analysis, the authors shed light on the diverse avenues through which GIS contributes to enhancing our understanding of criminal activities and informing effective crime prevention strategies.
+
+Tom-Jack, et al. (2019), highlight the role of Geographic Information Systems (GISs) in assisting law enforcement agencies (LEAs) in visualizing and comprehending crime patterns across space and time. The study focuses specifically on Part I offenses, including drugs, rape, robbery, and murder, due to their inclusion of spatial information. By employing various crime theories, LEAS can utilize different methods for crime analysis, particularly in high crime areas. Brantingham's crime pattern theory, which explores the association between crime and place, offers valuable insights into the generation of these high crime areas.
+
+Khan and Talukder (2021) highlight the increasing popularity of crime mapping as a method for analyzing the spatial distribution of crime. They emphasize its significance in enabling effective crime prevention strategies, particularly through hotspot analysis. However, they note that in Bangladesh, the use of Geographic Information System (GIS) for crime mapping is still in its early stages. As an initial study utilizing GIS-based crime mapping in Bangladesh, the research is significant in illustrating division-wise crime distribution. The authors emphasize the role of GIS software in providing spatial insights into crime patterns, which can inform targeted interventions and resource allocation for crime prevention.
+
+In their study, Biswas, et al. (2021) underscore the importance of utilizing geospatial technologies, particularly GIS, in understanding and addressing social issues like eve-teasing. Through contemporary approaches and the application of Rapid Assessment Methodology, the research offers insights into spatial analysis, mapping of crime patterns, and identification of potential risk factors. Furthermore, the study's focus on crime prevention measures grounded in socio- environmental perspectives highlights its significance in enhancing public safety and informing policy-making processes.
+
+Okon, et al. (2021) study highlights the significance of crime mapping in the Makurdi metropolis, utilizing GIS applications to analyze crime patterns and trends. The authors assess the distribution of crimes and variation within police divisions, identify areas with the highest crime incidences, and determine crime hotspots. Their findings provide valuable insights for law enforcement agencies to develop targeted intervention strategies and enhance public safety in the area.
+
+Pratama, et al. (2021) investigate the relationship between the economic downtum during the COVID-19 pandemic and the rise in street crimes in Lumajang district. Their qualitative research uses a phenomenological approach to understand the community's experiences and applies criminological theory to analyze these phenomena. The study leverages GIS technology to map crime locations, offering a visual representation of the increased criminal activity and highlighting areas requiring targeted interventions.
+
+The study explores the application of GIS techniques for crime hotspot mapping and spatio- temporal analysis in Abbottabad. By analyzing crimes such as murder, robbery, and physical injuries, Khan and Azhar (2019) illustrate how GIS can uncover correlations among criminal events and identify significant hotspots. The authors detail the process of collecting and integrating crime data from police departments and other sources for GIS mapping. They emphasize the importance of precise geographic data and the use of tools like Google Earth to generalize locations for comprehensive crime analysis.
+
+Crime Mapping Patterns
+
+The study emphasizes that criminals often target locations within their awareness zones, including areas where their family members live. The frequent visits to relatives' homes increase offenders' familiarity with these places, subsequently raising the likelihood of crimes being committed there. This relationship between familiarity and crime location is crucial for understanding crime mapping pattems and enhancing geospatial data analysis for effective crime prevention strategies. Eck & Weisburd (2019) shed light on the influence of familiarity on crime location selection through the lens of crime pattem theory. This theory suggests that criminals are inclined to choose crime scenes within their line of sight and in areas they are familiar with, such as their current or former neighborhoods.
+
+Lama and Rathore (2018) delve into the influence of police patrols on crime distribution. Their research suggests that crime tends to disperse away from police stations due to regular patrols, prompting the need for heightened security measures in high-crime areas. Additionally, their findings shed light on the presence of crime clusters near law enforcement hubs, underscoring the importance of diligent patrols to address such criminal concentrations.
+
+According to Kuang et al. (2019), behavioral scenarios play a crucial role in criminal modeling. They serve as the primary analytical unit for understanding crime events, offering insights into the behavioral patterns and motivations of offenders. While unlikely to replace official legal crime categories, crime subjects provide a unique perspective into the causal processes driving crime, enriching the understanding of criminal behavior in modeling and analysis.
+
+Brantingham et al. (2018) advocate for an analytical approach to understanding crime, emphasizing its theoretical validity and capacity to clarify crime dynamics. They stress the importance of incorporating elements of offenders' routines and the urban backdrop into crime explanations. Additionally, hotspot mapping is highlighted as a crucial analytical tool in criminological analysis, offering insights into crime concentration and aiding in effective crime prevention strategies.
+
+Piza et al. (2022) under-score the importance of crime analysis in policing. They highlight how crime analysts utilize data to understand crime-related problems, including spatial and temporal patterns of crime events, characteristics of crime scenes, and identifying high-risk individuals. The insights derived from crime analysis inform policing strategies, enabling proactive, focused, problem- solving activities to address crime problems effectively.
+
+In their examination of crime analysis and prevention, Bodare et al. (2019) highlight a systematic approach aimed at identifying and analyzing crime patterns and trends. This approach enables the prediction of regions with a high likelihood of crime occurrence and facilitates the visualization of crime-prone areas. They stress the increasing importance of computerized systems in crime analysis, emphasizing the pivotal role of data analysts in expediting criminal case resolution. Additionally, the authors advocate for the integration of data mining techniques, which extract actionable insights from unstructured data, to streamline crime-solving efforts. This interdisciplinary approach bridges computer science and criminal justice, focusing on daily crime factors rather than underlying causes. Bodare et al. (2019) emphasize the societal impact of crime on public safety, childhood development, and socioeconomic welfare. They highlight the need for refined methodologies in crime rate inference, particularly at the neighborhood level, to ensure more accurate estimations. The authors advocate for data-driven models that leverage localized crime dynamics to inform evidence-based policy interventions aimed at reducing crime and improving citizens' quality of life.
+
+Criminal analysis is defined as a systematic methodology for discovering and examining patterns and trends in crime. In this study, various clustering methods are employed to analyze crime data effectively. Specifically, criminal activity is clustered using K-means clustering techniques based on predefined scenarios. These clustering outcomes are then compared to select the most suitable clustering algorithm for crime detection purposes. To facilitate interactive and straightforward comprehension, the results of the K-Means clustering technique are visualized using Google Maps (Sivaranjani, 2018).
+
+Kapoor and Singh (2020) elucidate the significance of crime analysis and prevention strategies in identifying and addressing crime patterns. Their proposed methodology, grounded in past records, aims to identify high-risk areas and suggests security measures to deter potential offenders. By systematically examining past crime data and prioritizing crime patterns, law enforcement agencies can develop proactive strategies to enhance public safety and prevent crime before it occurs, ultimately contributing to the well-being and quality of life of communities.
+
+Das, et al. (2020), explore the utilization of internet crime reports for analysis, highlighting the wealth of data available on online platforms like Newswire and blogs. Their proposed paradigm aims to streamline the analysis process by extracting entities and defining crime vectors, enabling researchers to uncover valuable insights into crime trends and patterns. This analysis signifies the leveraging online crime data for comprehensive analysis and understanding of criminal activities.
+
+The study of Gupta (2021), delves into the spatial patterns of crime hotspots, examining how criminal activities are distributed across different locations. Through structured interviews conducted at 10 hotspots in various districts, the research sheds light on the geographical concentration of criminal incidents. His study contributes to the understanding of spatial patterns and criminal behavior through original research methods and analytical approaches. By exploring crime hotspots, examining changes in criminal behavior over time, and utilizing GIS and GPS technologies, the research provides valuable insights into crime mapping and spatial analysis.
+
+Srikanth (2021) advocates for the utilization of crime mapping to aid administration in planning strategies for crime prevention. By mapping crime data, law enforcement agencies can identify crime hotspots and allocate resources effectively. Additionally, the author suggests that data mining techniques enhance crime prediction and visualization, providing valuable insights into crime patterns for better strategic planning.
+
+A comprehensive analysis of crime patterns in Palembang City is conducted, focusing on the spatial distribution and temporal patterns of crime in the Seberang Ulu I District. The study utilizes a descriptive-quantitative method with spatial analysis to identify areas with varying levels of crime vulnerability. Key findings indicate that regions with public services, such as Tuan Kentang, 7 Ulu, and 15 Ulu, experience higher crime rates, particularly at night and in the afternoon. The research also highlights the significant influence of economic factors on crime rates, linking the availability of public services to crime occurrences (Yauni, 2024).
+
+Crime Mapping and Geospatial Data Analysis
+
+Spatial analysis and crime mapping have developed into potent tools in the toolboxes of academics and crime analysts. Maps can animate spatial data and illustrate patterns that are nearly hard to express in other methods. They can also be extremely helpful in an operational situation, assisting the police and their partners in crime reduction in allocating resources to the areas that most require them (Johnson, 2018). Police officers can benefit from crime mapping.
+
+Santos (2018) elucidates the significance of crime analysis and mapping within the field of criminal justice through his thematic analysis. Crime analysis, characterized by systematic research methods and data analysis, supports the mission of police agencies and provides insights into the geographic nature of crime through crime mapping. As a relatively new topic in criminal justice education, the introduction of crime analysis in undergraduate courses offers students practical applications of theory and statistical methods, while also presenting viable career paths within the criminal justice sector. Generally, Santos highlights the importance of integrating crime analysis into educational curricula to prepare students for roles in law enforcement and related professions.
+
+Kalantari et al. (2020) highlight the significance of high crime rate areas as hubs for criminal activity. Their research employs advanced techniques to explore spatial dependency within these areas, providing valuable insights into the dynamics of crime in urban environments. By focusing on high crime rate areas, the study contributes to a better understanding of crime patterns and informs strategies for crime prevention and intervention.
+
+Malleson (2018) examines the limitations of machine learning algorithms in crime modeling. The author highlights the difficulty these algorithms encounter in capturing the low-level dynamics of the crime system, such as individual behavior. By focusing on spatially aggregated data, machine learning models may overlook crucial details necessary for understanding and predicting city-wide crime rates. This analysis underscores the need for advanced methodologies to address the complexities of crime dynamics effectively.
+
+Machina and Songjiang (2020) explore the utilization of big data for intelligence and crime analysis. They develop a model employing various data collection methods and tools such as UML models and Microsoft Excel. By validating their research hypothesis, the authors highlight the potential of their model to enhance traditional methods of police and crime analysis through the utilization of advanced technologies and big data analytics.
+
+Kang et al. (2020) focus on the utilization of multifaceted data for crime prediction models. They stress the integration of diverse data sources, including web databases, weather data, and crime-related data, to enhance the model's predictive capabilities. Additionally, the authors conduct statistical analysis to evaluate the model's performance in predicting the likelihood of crime, comparing it to other prediction models and assessing its effectiveness in identifying critical data while filtering out unnecessary information.
+
+Prathap (2020) delves into the impact of crime in developing nations, emphasizing its pervasive nature and multifaceted consequences. The author emphasizes the significant toll that crime takes on the country's social fabric, economy, and governance. Additionally, the author highlights the proactive efforts undertaken by law enforcement agencies to mitigate the impact of crime, including the adoption of real-time crime prediction strategies. This thematic analysis sheds light on the complex interplay between crime, socio-economic factors, and law enforcement efforts in developing nations.
+
+Wang, et al. (2020), contribute significantly to the understanding of crime rates and urban dynamics by examining the relationship between crime risk and urban indicators in China's largest cities. Through the application of diverse statistical methods and meticulous analysis of urban dynamics, the study sheds light on the intricate spatial distribution and prevalence of crime. By identifying key influential factors such as land utilization, employment rate, and mobile phone subscribers, the research enhances the importance of considering urban dynamics in addressing crime challenges.
+
+Yogesh (2023) emphasizes the importance of prediction and crime analysis in addressing the widespread and impactful issue of crime. By employing algorithms capable of predicting high- crime areas, law enforcement agencies can proactively strategize and allocate resources effectively. The integration of data mining techniques allows for the extraction of valuable insights from unstructured data, further enhancing the accuracy of crime prediction models.
+
+Sham Venkat, et al. (2023) underscore the significance of data analytics in understanding behavior, trends, and insights within various domains, including crime analysis. By leveraging past data, crime analysis aids in regulating crime rates in cities and regions. The study proposes a crime analysis methodology supported by machine learning techniques to forecast and analyze trends in criminal activity. Through crime data analysis, the severity of crimes can be assessed, and the location and timing of incidents can be pinpointed, facilitating effective crime prevention strategies.
+
+Phuntarakit and Tontisirin (2021) utilize demographic data from the Royal Thai Police (2019) to identify Pathum Thani as the second most unsafe district in the Bangkok Metropolitan Region (BMR) after Bangkok. They select a portion of Thammasat University Rangsit campus for their research, using mapping and overlay analysis to pinpoint the most unsafe location, particularly the area behind the main stadium, based on physical and non-physical attributes. In their study, the authors delve into crime as a significant social problem in Thailand and emphasize the importance of reducing crime opportunity for effective crime prevention. They employ mapping, overlay analysis, and the Analytic Hierarchy Process (AHP) to identify unsafe locations within the Thammasat University Rangsit campus, with the area behind the main stadium identified as the most unsafe based on both physical and non-physical attributes.
+
+Cheng and Chen (2021) explore the evolution of urban crime understanding and mitigation, highlighting the transition from traditional criminological approaches to modern data-driven policing. They emphasize the importance of analytical tools such as crime hotspot mapping and strategic police resource allocation in preventing crime and improving urban security. The chapter proposes that data-driven policing, supported by big data technologies, offers promising effectiveness for crime prevention and security enhancement in urban environments.
+
+Sridharan et al. (2024) provide an in-depth examination of crime analysis, emphasizing the importance of understanding crime patterns and trends through statistical analysis and geographic mapping. Their study focuses on the creation of predictive models using historical data and algorithms like Linear Regression and Random Forest to forecast future crime tendencies. By identifying trend-changing years, the research aims to improve the accuracy of crime projections. The findings underscore the potential of crime analysis to aid law enforcement authorities in resource allocation and targeted crime prevention initiatives, ultimately enhancing public safety.
+
+This research project depicted crime analysis and geospatial mapping in Alicia, Isabela from 2018 to 2023. The input-process-output theory was used in this type of investigation. This was the most appropriate framework to realize the final aims of the study.
+
+The primary data sources were responses gathered in Alicia Police Station, Isabela. This data is gathered to serve as input. The process ran the data collection, pre-processing, data analysis, geospatial mapping, interpretation, and then the output, which contained crime analysis and geospatial mapping using GIS.
+
+The paradigm of this study showed that the input presented the data of recorded crimes committed in Alicia, Isabela. The data collection, data analysis, geospatial mapping, and interpretation have to do with the process. The output contains crime analysis and geospatial mapping.
+
+2.3 Definition of Terms
+
+Cluster Analysis. A statistical technique used in spatial analysis to identify pattems of similarity or dissimilarity between groups of geographic features or crime incidents.
+
+Crime Analysis. The systematic study of crime and disorder patterns and trends to support law enforcement and public safety agencies in their efforts to reduce and prevent crime.
+
+Crime Mapping. The process of using geospatial mapping tools and GIS software to visualize crime data on a map, to identify patterns and trends in crime over time and space.
+
+Crime. It is the intentional commission of an act usually deemed socially harmful or dangerous and specifically defined as prohibited and punishable under criminal law.
+
+Geographic Information System (GIS). A software system designed to capture, store, manipulate, analyze, and visualize geographic data, often used in crime analysis and geospatial mapping. Geospatial Mapping. The process of visualizing geographic data on a map, using specialized software and geographic information systems (GIS) to create maps that show the distribution and patterns of data across a geographic area.
+
+Hot Spot Analysis. A type of spatial analysis that identifies areas or locations where crime is concentrated or more frequent than expected, based on statistical models and algorithms.
+
+3 OPERATIONAL FRAMEWORK
+
+3.1 Materials
+
+3.1.1 Software
+
+Leaflet API. The researchers used leaflet API to create and manage crime maps.
+
+Graphic User Interface (GUI). The researchers used GUI to make it more transparent when identifying crimes in the crime map because graphical symbols let you work with picture-like items (icons and arrows, for example).
+
+Python. The researcher used Python as a programming language in creating the system.
+
+GIS is a computer application system for storing, capturing, displaying, and checking data related to the position of the earth's surface. It can reveal different kinds of information on one map.
+
+Visual Studio Code. The researcher used Visual Studio support for development operations like debugging, task running, and version control.
+
+3.1.2 Hardware
+
+Desktop or Laptop Computers - Crime analysis and geospatial mapping software often require a powerful computer with high processing power and memory capacity to run smoothly. Desktop or laptop computers with powerful CPU's, sufficient RAM, and dedicated graphics cards are often used for this purpose.
+
+Mobile Devices - Mobile devices such as smartphones and tablets can be used to collect and record geospatial data in the field, such as crime incident locations or other relevant data.
+
+3.1.3 Data
+
+For our analysis, we gathered the list of recorded crimes dated January 1, 2018- April 30, 2023, at the Police Station city of Alicia, Isabela as the crime indicator to identify what type of crime, where most likely have crime, what time did that happen, possible age of victims/suspect that can allocate through mapping and by indicating the hotspot we can visualize the high density of crimes in a particular area.
+
+A flowchart of experimental design for mapping crime activities in Alicia using crime mapping modeling.
+
+Start. This is where you start the system.
+
+Login. It is where the user registers or inputs a username and password to log in.
+
+Valid to enter. A condition will continue to the dashboard if you are valid to enter, and you cannot access the dashboard if you are not.
+
+1. The dashboard has three options to interact with Geospatial Mapping, Crime record, Analytics, and Home.
+
+2. The maps option shows the map of the crime reported in Alicia. The user may check the crime map every year from 2018-2023.
+
+Valid to Map - A condition of what crime data you want to see on the map.
+
+1. The analytics option shows the data the system collected and presents the graphs of yearly crimes and incident types.
+
+2. The home option will bring you back into the dashboard.
+
+Respondents
+
+The respondents of this study were 20 police officers since the system created was only for the PNP's in Alicia Police Station, and also because of the confidentiality of information in the data set.
+
+Locale
+
+The respondents conducted the study at Alicia Police Station, Alicia, Isabela, because the researchers were from the residents of Cauayan City.
+
+The researchers used the spiral-model software development life cycle because the users quickly
+
+understood it.
+
+It shows the step-by-step procedure and process of the system's development.
+
+Phase 1: Planning Stage In planning, the researchers thought about developing a system that maps the reported crimes in Cauayan City to enhance the method of recording, tracking, and monitoring the city's crime-prone areas.
+
+Phase 2: Analysis Stage In this phase, the developers gathered data to discuss, analyze, and solve the system's problems and requirements. This guided the developers to know the necessities of the system.
+
+Phase 3: Design Stage In system design, the researchers designed and coded a system using Google Collaborate, Python, Visual Studio code, and the GUI involved in the project. The researchers designed the user interface and identified all necessary inputs, outputs, and processes.
+
+Phase 4: The Development Stage Most of the major system decisions are made once the design is completed. The goal of the coding phase is to translate the system's design using the Python language. After the database and the user interface are designed, the researchers input codes for every command to ensure the system will work.
+
+Phase 5: Testing Stage In this phase, the testing procedure was to finalize the system by checking whether it had errors, bugs, and mistakes. The researchers proposed the system to the IT experts to test it.
+
+Phase 6: Integration Stage in this phase, the researchers finalized the system by bringing together the overall designs and suggestions of the IT experts. Different modules or designs will be integrated into the primary source code through developer efforts, usually by leveraging training environments to detect other errors or defects.
+
+Phase 7: Maintenance Stage This is the last phase of the system development life cycle. In this phase, the developers must now move into maintenance mode and begin practicing any activities required to handle issues reported by users.
+
+3.2.3 Evaluation
+
+Data Gathering Procedure
+
+Pre-Questionnaire
+
+The researchers used a pre-questionnaire to find out how well the current system worked and what effect it had on their knowledge and views.
+
+Post-Questionnaire
+
+A post-questionnaire was given to respondents once the system had been completed, and it is frequently used in conjunction with the pre-questionnaire to assess the system's effectiveness.
+
+Library Research
+
+The researchers searched the library for books and studies relevant to the topic that could provide information.
+
+Internet Research
+
+The researchers also searched on the internet. The researchers researched the internet to understand the flow of crime mapping modeling using GIS. The related studies and any related studies were sample data gathered from the internet.
+
+Research Instruments
+
+The researchers used a survey questionnaire as their main instrument for gathering data. The survey questionnaire was developed using a fact-finding approach that adequately interprets results. There were instances where the respondents were asked to rate the system quality. information quality, and usefulness of implementing a phase in the investment process.
+
+1. Mean, and Standard Deviation were used to describe the advantages and post-evaluation of the Crime Modelling System in a Police Station in Cauayan City, Isabela.
+
+It shows the scale range and interpretation of the five-point scale. Scale 5 on a scale of 4.50- 5.00, with the interpretation "strongly agree." Scale 4 with the range of 3.50-4.49 and the interpretation of "agree" Scale 3 with the range of 2.50-3.49 with a neutral interpretation Scale 2 with the range of 1.50-2.49 with the interpretation of "disagree" Scale 1 (1.00-1.49), with "strongly disagree" as the interpretation.
+
+In figure 4 show that the mean or average, is a fundamental statistical measure that represents the central value of a set of numbers, calculated by summing all the individual values and then dividing by the total number of values.
+
+Sum all the responses for the question. Add together all the numerical responses given by each respondent for a specific question. This total represents the cumulative response for that question.
+
+Count the total number of respondents. Determine the number of individuals who provided responses to that question. This is the total number of data points you have for that question.
+
+Divide the total sum by the number of respondents. This step calculates the average response (mean) for the question. By dividing the cumulative response (from step 1) by the total number of respondents (from step 2), you obtain the mean response.
+
+Figure 5 shows that the standard deviation is a statistical measure that quantifies the amount of variation or dispersion in a set of data points, providing insight into how spread out the values are around the mean.
+
+Calculate the mean. First, find the mean (average) of the responses using the method described earlier.
+
+Find the squared differences from the mean. Subtract the mean from each response to find the deviation of each response from the mean. Then, square each deviation.
+
+Sum the squared differences. Add together all the squared deviations.
+
+Calculate the variance. Divide the sum of the squared differences by the number of respondents.
+
+For a sample, divide by the number of respondents minus one (n-1) to get the sample variance.
+
+Take the square root of the variance. The standard deviation is the square root of the variance.
+
+The table shows that items 4 and 5 received the highest mean of 4.53 and 4.60, interpreted as "Strongly Agree," while item 3, "Easier to detect the crime location" respectively, received the mean of 4.27, interpreted as "Agree." and the item 2, which is the "enlighten police workload in the PNP Alicia" received the lowest mean of 4.00, interpreted as "Agree". The mean response for this category is 4.37, with a descriptive interpretation of "Agree. Additionally, research by Mohler et al. (2018) explores the use of real-time crime mapping in predicting future crime hotspots and allocating resources accordingly. By leveraging geospatial analysis techniques, law enforcement agencies can proactively target particular areas with high crime rates, effectively deterring criminal activity and reducing overall crime levels.
+
+As seen in Table 3, the highest response by the respondents is on Item 1, "Functional Completeness: the crime analysis and geospatial mapping cover all the specified tasks and user objectives, with a mean of 4.33, which is interpreted as "Agree." In contrast, the lowest response is on item 2, "Functional Correctness: the crime analysis and geospatial mapping provide correct results with the needed degree of precision," with a mean of 3.87, which is interpreted as "Agree." In terms of Functional Suitability, respondents said they "Agree" with the current system, with a composite mean of 4.09. Moreover, Gupta and Sharma (2020) highlight the significance of functional correctness in crime analysis systems that the provision of correct results with the required degree of precision is essential for ensuring the effectiveness of crime prevention strategies. Gupta and Sharma's research emphasizes the need for continuous advancements in technology to enhance the accuracy and reliability of crime analysis tools.
+
+Table 4 shows that item 1 which is the time behavior has a mean of 4.33, while item 2 the capacity has a mean of 4.47 which is interpreted as "Agree". The category mean for the Performance Efficiency is 4.40 with the descriptive interpretation of "Agree". According to Wang et al. (2019), efficient system response time is crucial for timely crime analysis and decision-making. A system that meets the requirements of processing time ensures that users can access and analyze data promptly, enabling swift responses to emerging crime trends and incidents. Wang et al. emphasize the importance of optimizing system performance to minimize response times and enhance overall efficiency in crime analysis operations.
+
+Table 5 shows that with regards to Usability, in terms of Learnability, and User Interface Aesthetics, has the same mean of 4.60 which is interpreted as "Strongly Agree" while Operability has a mean of 4.53 which is also interpreted as "Strongly Agree". In terms of Usability, the respondents responded Strongly Agree" with the composite mean of 4.58. Smith and Johnson (2021) highlight the significance of system learnability and operability in improving user experience and efficiency. Learnability denotes how easily users can grasp using the system, while operability pertains to the simplicity of operating and controlling the system. Their research results that systems featuring intuitive interfaces and clear navigation paths tend to gamer favorable user feedback and higher usability ratings. They advocate for the implementation of user-friendly design principles and effective training programs to facilitate system adoption and enhance user proficiency.
+
+Referring to Table 6, the item that got the most votes was "Availability: the crime analysis and geospatial mapping are operational and accessible to use". The lowest response is on item 2, "Recoverability: the system can recover the data". In terms of Reliability, respondents said they "Agree" with the current system, with a composite mean of 4.30. Studies by Brown et al. (2023) highlight the importance of system availability in ensuring the continuous operation of crime analysis and geospatial mapping tools. Brown et al. emphasize that system downtime can significantly impact law enforcement agencies' ability to respond to emerging threats and allocate resources effectively.
+
+Table 7 presents the highest response by the respondents on item 2, "Confidentiality. The system can ensure that data is only accessible to those who have authorized access and trusted personnel" with a mean of 4.33 and interpreted as "Agree" while the lowest response is on item 1, "Integrity: The system can prevent unauthorized access, that has a mean of 4.27 with the interpretation of "Agree". In terms of security, the respondents responded "Agree" with a composite mean of 4.30. Garcia and Martinez's (2020) study look into the precautions used to protect the privacy of data in crime analysis systems. They emphasize how important role-based access restrictions and encryption methods are for limiting data access to only authorized individuals.
+
+Referring to Table 8. The answer that got the most votes was "Modifiability: this system can add crime records without degrading the existing data" for item 3. The lowest response is on item 2, "Reusability: this system can be used in more than one system process". In terms of Maintainability, respondents said they "Agree" with the current system which has a composite mean of 4.38. The adaptability of crime analysis systems to new data records without sacrificing the integrity of already-existing data is examined in research by Patel and Gupta (2022). To enable smooth data integration and change, they stress the necessity of scalable systems and adaptable data models.
+
+Table 9 shows that the highest mean is 4.20 which is the "Adaptability" while the lowest is the "Installability" with a mean of 3.93. The category mean of Portability is 4.07 with the descriptive interpretation of "Agree". Zhang et al. (2021) investigated the installability of web-based apps across many web browsers. They underline the need of guaranteeing compatibility and functionality with common web browsers in order to improve user accessibility and usability.
+
+Table 10 shows that with regards to the information and data, in terms of result, records, and accessibility, it has the same mean of 4.53 which is interpreted as "Strongly Agree." In terms of information and data, the respondents responded "Strongly Agree" with a composite mean of 4.53. Wang and Zhang (2019) conducted research focusing on the authenticity of records within crime analysis datasets. Their study emphasizes the importance of ensuring that records are accurate and dependable to maintain the integrity and trustworthiness of crime analysis systems. They propose the implementation of thorough data validation procedures and quality assurance protocols to validate the genuineness and reliability of recorded crime data. This approach aims to support the credibility and usefulness of crime analysis results.
+
+The variable with the highest mean is "Usability" with 4.58 and "Information and Data" has 4.53 with the descriptive interpretation of "Strongly Agree", while the lowest variable with a mean of 4.07 is "Portability which is interpreted as "Agree". Overall, the grand mean is 4.33 with the descriptive interpretation of "Agree". Research by Lee et al. (2021) emphasizes the importance of functional suitability, performance efficiency, reliability, security, and maintainability in crime analysis and geospatial mapping systems. Lee et al. highlight the need for systems that effectively meet user requirements, perform efficiently, maintain data integrity, ensure security, and are easily maintainable to support continuous operations.
+
+Figure 6 shows the login interface of a system, where users are required to input their email address and password to gain access. This login process serves as a security measure to authenticate users and ensure that only authorized individuals can access the system's features and data. If a user does not already have an account, the system prompts them to register first before proceeding with the login process. Registration typically involves providing personal information such as name, email address, and creating a password. Once registered, users can then use their credentials to log in to the system. Overall, the login interface serves as a gatekeeper to the system, ensuring that only authenticated users can access its functionalities while also providing a means for new users to register and create accounts.
+
+In figure 7, the user's interaction with the system upon logging in, guiding them to the dashboard interface. Within this interface, users are presented with several options to choose from based on their preferences and objectives. These options typically include Geospatial Mapping, Crime Records, and Analytics modules. Through the Geospatial Mapping module, users can visually explore crime data displayed on a map, allowing for the identification of spatial patterns and hotspots of criminal activities. Meanwhile, the Crime Records module provides access to detailed information about past criminal incidents, including the type of crime, location, date and time, and any relevant notes or details. Finally, the Analytics module equips users with tools for conducting in-depth analysis and generating statistical reports, enabling them to extract valuable insights to support decision- making and strategic planning in crime prevention and law enforcement efforts.
+
+Figure 8 presents crime analytics for Alicia and Isabela, displaying frequent criminal activities and high-crime barangays through a stacked bar chart. Users can select a year from 2018 to 2023 to examine crime trends, facilitating focused analysis within specific timeframes. This feature enhances usability, empowering law enforcement and decision-makers to develop targeted interventions based on informed insights.
+
+Figure 9 presents a comprehensive view of crime analytics pertaining to Alicia, Isabela, offering insights into prevalent criminal activities and identifying high-crime barangays through a detailed line chart visualization. This visualization serves as a valuable tool for law enforcement agencies and policymakers, providing them with actionable intelligence to prioritize resources and develop targeted crime prevention strategies. The interactive feature allowing users to select a specific year from 2018 to 2023 enhances the utility of the dashboard by facilitating in-depth analysis of crime trends over varying temporal scopes.
+
+Figure 10 provides a detailed overview of crime records, facilitating user access to a comprehensive crime list within the system. This feature empowers users to explore crime data efficiently, with the added functionality of exporting crime list data for further analysis or reporting purposes. The inclusion of a search bar enhances user experience by enabling quick and convenient searches for specific crimes of interest. Additionally, the alphabetical feature streamlines navigation within the crime list, allowing users to locate relevant information more effectively.
+
+Figure 11 demonstrates the crime records interface, showcasing the "add record" feature designed to empower users, particularly police officers, to manually input crime data into the system. This functionality enables users to document and catalog newly reported crimes directly within the system, ensuring comprehensive and up-to-date crime records.
+
+Figure 12 presents the murder crime mapping interface, providing users with visual insights into the locations of reported murders and crime hotspots. Utilizing color indicators, such as green circles, the interface highlights areas with a higher incidence of murder cases, enabling users to identify geographic areas of heightened criminal activity at a glance. Additionally, users can interact with the map by clicking on the green circle indicators to access detailed information about specific crime incidents, including the date and time of the crime, as well as the age of the victim and suspect involved.
+
+Figure 13. Rape Crime Mapping
+
+Figure 13 displays the rape crime mapping interface, offering users a visual representation of reported rape incidents and crime hotspots. Using color-coded indicators, such as dark blue for areas with a high incidence of rape crimes and light blue for other crime areas, the interface allows users to identify geographical areas with varying levels of criminal activity related to rape. Furthermore, users can interact with the map by clicking on the blue circle indicators to access detailed information about specific rape incidents, including the date and time of the crime, as well as the age of the victim and suspect involved.
+
+Figure 14. Drugs Crime Mapping
+
+Figure 14 presents the drugs crime mapping interface, highlighting areas with a significant number of drug-related incidents. Using a color scheme that employs dark violet to denote barangay in Alicia with a high incidence of drug crimes and light violet to represent other crime areas, the interface provides users with a clear visualization of drug-related criminal activity hotspots. By clicking on the circle indicators, users can access detailed information about specific drug-related incidents, including the date and time of the crime, as well as the age of the individuals involved as victims or suspects.
+
+Figure 15. Robbery Crime Mapping
+
+Figure 15 presents the robbery crime mapping feature, offering users a visual representation of areas prone to robbery incidents. Through a color-coded system, the interface distinguishes the barangay in Alicia with high robbery rates, depicted in dark red, from those with lower incidences, indicated in light red. This visualization aids users in identifying robbery hotspots and understanding the distribution of such crimes across different areas. Users can interact with the map by clicking on the red circle indicators to access detailed information about specific rape incidents, including the date and time of the crime, as well as the age of the victim and suspect involved.
+
+Figure 16. Filter Crime Hour
+
+Figure 16 provides users with a comprehensive overview of crime occurrences based on specific dates and times in Alicia, Isabela. This feature allows users to select a particular time range of interest, enabling them to focus on analyzing crime incidents during specific periods. Additionally, the interface displays the total number of crimes recorded within the chosen timeframe, providing users with valuable insights into the frequency and distribution of criminal activities.
+
+Figure 17. Crime Hours
+
+Figure 17 exemplifies the predictive crime analysis feature, allowing users to input specific times to determine the likelihood of crime occurrences in a particular area within Alicia, Isabela. By inputting the desired time, users can access predictive insights into the temporal patterns of crime incidents, identifying periods when criminal activities are most prevalent. This functionality aids law enforcement agencies and decision-makers in proactively allocating resources and implementing preventive measures to mitigate potential risks and enhance public safety.
+
+Figure 18. Time Occurrence
+
+Figure 18 displays the outcome of filtering crime incidents based on a specified time range chosen by the user. By inputting the desired time interval, users can narrow down the displayed crime data to focus on incidents that occurred within that particular timeframe in Alicia, Isabela.
+
+5 SUMMARY, CONCLUSIONS, AND RECOMMENDATIONS
+
+5.1 Summary
+
+According to the data gathered and assessed by the researchers, the respondent of the processing system experiences issues with system performance, information service, and security. The main goal of this study is to create an effective system for mapping crime hot spot activities that will upgrade the Alicia police processing system.
+
+The researchers distributed a questionnaire to 15 respondents, including IT experts. They used weighted average calculations to tally the responses to determine the proposed system's effectiveness and correctness of the system.
+
+Based on the survey results, respondents also agreed that the proposed system would be good for users of Alicia, Isabela, with a mean of 4.24 for advantages, 3.97 for performance, 4.53 for the information and data, 4.30 for security, and 4.20 for service. The overall grand mean is 4.25 in crime analysis and geospatial mapping.
+
+The researchers also presented a comprehensive analysis of crime in Alicia, Isabela, shedding light on prevalent criminal activities and identifying high-crime barangays. Through detailed line chart and stacked bar chart visualizations, the chapter offers valuable insights for law enforcement agencies and policymakers. The visualizations serve as powerful tools, enabling stakeholders to gain a deeper understanding of crime patterns and trends. By visualizing data over multiple years (2018 to 2023), the interactive feature enhances the utility of the dashboard, allowing users to analyze crime trends across different temporal scopes. These insights empower law enforcement agencies and policymakers to prioritize resources effectively and develop targeted crime prevention strategies. By leveraging actionable intelligence derived from the analysis, stakeholders can work proactively to address security concerns and enhance public safety in Alicia, Isabela.
+
+5.2 Conclusions
+
+The study results indicate that the system can effectively predict the time occurrence of the most likely crimes based on past data collected from 2018 to 2023 from the PNP Alicia, Isabela. Through comprehensive data analysis, the researchers have identified patterns and trends in crime occurrence, enabling the system to generate predictive insights. This capability empowers law enforcement agencies to proactively allocate resources and implement targeted crime prevention measures. By leveraging historical data and advanced analytical techniques, the system enhances situational awareness and supports informed decision-making to address security concems in Alicia, Isabela.
+
+The study demonstrates that the system can identify crime hotspots with a high concentration of incidents, specifically drugs, rape, robbery, and murder. By analyzing historical crime data from 2018 to 2023 provided by the PNP Alicia, Isabela, the system utilizes crime analysis and geospatial mapping to pinpoint these high-risk areas. This capability assists law enforcement in tracking and addressing these serious crimes more effectively. The system enhances the police's ability to allocate resources strategically and implement targeted crime prevention measures, thereby improving overall security and safety in Alicia, Isabela.
+
+Based on the study's results, there are various advantages encountered in the existing system. It can help the PNPs lighten their workload, and it is essential in managing and reducing crime in an area by the identified crime hot spots. After analyzing the gathered information, the researchers concluded that the user's evaluation of the Crime Analysis and Geospatial Mapping was "agreed" in terms of advantages, performance, security, and service while they strongly agreed to the information and data of the system. The researchers concluded that the respondents were satisfied with the system's performance.
+
+5.3 Recommendations
+
+The researchers would like to give the following recommendations based on their observations and conclusions:
+
+1. For better results when identifying crime hot spots, researchers suggest finding an algorithm and comparing it to another algorithm. This would allow for more research and improvement of the system.
+
+2. For a clearer picture, the researchers say that the system should show the exact picture of the particular area of the crime incident.
+
+3. The researchers suggest adding a graph to show which crimes happen most often in each barangay of Alicia, Isabela.
+
+4. The researchers suggest adding more crimes that happen in particular barangay of Alicia, Isabela.

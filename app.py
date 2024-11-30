@@ -91,7 +91,7 @@ def detect(input_text):
     prediction = model.predict(vectorized_text)
 
     if prediction[0] == 0:
-        return "No Plagiarism Detected", [], 0, 100
+        return "No Similarity Detected", [], 0, 100
 
     cosine_similarities = cosine_similarity(vectorized_text, preprocessed_texts)[0]
     plagiarism_sources = []
@@ -110,7 +110,7 @@ def detect(input_text):
     plagiarism_sources.sort(key=lambda x: x[1], reverse=True)
     total_plagiarism_percentage = min(round(total_similarity * 100, 2), 100)
     unique_percentage = 100 - total_plagiarism_percentage
-    detection_result = "Plagiarism Detected" if plagiarism_sources else "No Plagiarism Detected"
+    detection_result = "Similarity Detected" if plagiarism_sources else "No Similarity Detected"
     return detection_result, plagiarism_sources, total_plagiarism_percentage, unique_percentage
 
 def extract_text_from_file(file):

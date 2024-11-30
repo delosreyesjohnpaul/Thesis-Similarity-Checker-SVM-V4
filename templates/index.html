@@ -61,7 +61,7 @@
         .form-control-file {
             margin-top: 10px;
             font-size: 14px;
-            padding-left: 70px; /* Adjust this value to move the input to the right */
+            padding-left: 70px;
         }
 
         button {
@@ -80,6 +80,7 @@
         button:hover {
             background-color: #0056b3;
         }
+
 
         table {
             width: 90%;
@@ -131,11 +132,18 @@
 
         .toggle-btn {
             cursor: pointer;
-            color: #007bff;
+            color: #e5e8eb;
+            font-weight: bold;
             text-decoration: underline;
         }
 
-        /* Tab Content Styling */
+        .tab-buttons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            gap: 10px;
+        }
+
         .tab-content {
             display: none;
         }
@@ -172,10 +180,7 @@
 
         function switchTab(tabId) {
             const tabs = document.querySelectorAll(".tab-content");
-            tabs.forEach(tab => {
-                tab.classList.remove("active");
-            });
-
+            tabs.forEach(tab => tab.classList.remove("active"));
             document.getElementById(tabId).classList.add("active");
         }
 
@@ -193,51 +198,39 @@
 </head>
 <body>
     <div class="container-wrapper">
-        <!-- Input Container -->
         <div class="container">
             <h1>CCSICT Research Output Similarity Checker</h1>
             <form action="/detect" method="POST" enctype="multipart/form-data" onsubmit="return validateForm(event)">
                 <textarea name="text" placeholder="Enter text here..."></textarea>
-
                 <div class="file-input-container">
                     <label for="file">Upload PDF or TXT file(s):</label>
                     <input type="file" name="files[]" id="file" class="form-control-file" multiple>
                 </div>
-
-                <button type="submit">Check for Plagiarism</button>
+                <button type="submit">Check for Similarity</button>
             </form>
         </div>
-
-        <!-- Result Container -->
         <div class="result-container">
             {% if result %}
                 <h2>{{ result }}</h2>
-                <div>
-                    <button onclick="switchTab('plagiarism-table')">Plagiarism Table</button>
+                <div class="tab-buttons">
+                    <button onclick="switchTab('plagiarism-table')">Similarity Table</button>
                     <button onclick="switchTab('graph')">Show Graph</button>
-                    <button onclick="switchTab('snippets')">Matching Snippets</button>
+                    {% if plagiarism_sources %}
+                        <button onclick="switchTab('snippets')">Matching Snippets</button>
+                    {% endif %}
                 </div>
-
                 <div id="plagiarism-table" class="tab-content active">
                     <table>
-                        <tr>
-                            <th>Number of Words</th>
-                            <th>Results Found</th>
-                        </tr>
-                        <tr>
-                            <td>{{ word_count }}</td>
-                            <td>{{ total_results }}</td>
-                        </tr>
+                        <tr><th>Number of Words</th><th>Results Found</th></tr>
+                        <tr><td>{{ word_count }}</td><td>{{ total_results }}</td></tr>
                     </table>
                 </div>
-
                 <div id="graph" class="tab-content">
                     <img src="{{ url_for('static', filename='uploads/pie_chart.png') }}" alt="Plagiarism Pie Chart">
                     {% if similarity_graph_path %}
                         <img src="{{ url_for('static', filename='uploads/similarity_graph.png') }}" alt="Similarity Index Graph">
                     {% endif %}
                 </div>
-
                 <div id="snippets" class="tab-content">
                     <div class="sources">
                         {% for source in plagiarism_sources %}
@@ -256,7 +249,7 @@
             {% else %}
                 <div class="welcome-message">
                     <h2>Welcome to CCSICT Research Output Similarity Checker</h2>
-                    <p>Please enter text or upload files to check for plagiarism.</p>
+                    <p>Please enter text or upload files to check for similarity.</p>
                     <img src="{{ url_for('static', filename='welcome.gif') }}" alt="Welcome GIF">
                 </div>
             {% endif %}
